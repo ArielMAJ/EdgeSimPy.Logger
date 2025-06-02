@@ -23,7 +23,7 @@ test: ## Run automated tests.
 
 .PHONY: up-database
 up-database: ## Start database container.
-	$(COMPOSE) up -d postgres --force-recreate
+	$(COMPOSE) up -d esp-db --force-recreate
 
 .PHONY: down
 down: ## Stop all containers.
