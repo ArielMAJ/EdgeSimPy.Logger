@@ -8,7 +8,8 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 COPY ./src ./src
+COPY alembic.ini .
 
 EXPOSE 3000
 
-CMD ["python", "-m", "src.main"]
+CMD ["/bin/sh", "-c", "alembic upgrade head && python -m src.main"]
