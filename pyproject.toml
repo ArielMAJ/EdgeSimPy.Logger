@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "edge-sim-py-logger"
-version = "1.0.2"
+version = "1.0.1"
 description = "A microservice for storing, retrieving, and managing EdgeSimPy simulation logs and related metadata."
 authors = ["ArielMAJ <ariel.maj@hotmail.com>"]
 readme = "README.md"
